@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 
-const ENTRY = ['app.jsx', 'webpack-hot-middleware/client'];
+const ENTRY = ['./app.jsx', 'webpack-hot-middleware/client'];
 const CONTEXT_PATH = path.join(__dirname, 'client');
 const OUTPUT_PATH = path.join(__dirname, 'public');
 const OUTPUT_FILENAME = 'bundle.js';
