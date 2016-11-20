@@ -38,3 +38,6 @@ jspm_packages
 
 # My design assets
 design_assets
+
+# Distribution
+dist
