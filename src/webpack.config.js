@@ -2,8 +2,15 @@ import webpack from 'webpack';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const ENTRY = ['./app.jsx', 'webpack-hot-middleware/client'];
-const CONTEXT_PATH = path.join(__dirname, 'client');
+const isProduction = process.env.NODE_ENV === 'production';
+let ENTRY;
+
+if (isProduction) {
+  ENTRY = ['./app.jsx'];
+} else {
+  ENTRY = ['./app.jsx', 'webpack-hot-middleware/client'];
+}
+const CONTEXT_PATH = path.join(__dirname, '..', 'src', 'client');
 const OUTPUT_PATH = path.join(__dirname, 'public');
 const OUTPUT_FILENAME = 'bundle.js';
 const ESLINT_CONFIG_PATH = path.join(__dirname, '..', '.eslintrc');

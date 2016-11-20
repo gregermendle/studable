@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
     "dev": "NODE_ENV=development nodemon src/server.js --exec babel-node",
-    "prestart": "NODE_ENV=production babel src --out-dir dist --copy-files",
-    "start": "node dist/server.js"
+    "prestart": "babel src --out-dir dist --copy-files --ignore src/client && NODE_ENV=production webpack -p --config dist/webpack.config.js",
+    "start": "NODE_ENV=production node dist/server.js"
   },
   "repository": {
     "type": "git",
