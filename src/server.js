@@ -30,12 +30,12 @@ if (!isProduction) {
   app.use(webpackDevMiddleware(compiler, {
     noInfo: true, publicPath: webpackConfig.output.publicPath
   }));
+  app.use('/', express.static(PUBLIC_PATH));
 }
 
 /*
   Apply middleware to app and start server
 */
-app.use('/', express.static(PUBLIC_PATH));
 app.use(router);
 let server = app.listen(config.port, function() {
   winston.log('info', 'Connection established on port: ' + config.port);
