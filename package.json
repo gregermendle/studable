@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregermendle/Studable.git"
+    "url": "git+https://github.com/gregermendle/studable.git"
   },
   "author": "Gregory Jordan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gregermendle/Studable/issues"
+    "url": "https://github.com/gregermendle/studable/issues"
   },
-  "homepage": "https://github.com/gregermendle/Studable#readme",
+  "homepage": "https://github.com/gregermendle/studable#readme",
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
