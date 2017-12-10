@@ -10,7 +10,7 @@ if (isProduction) {
 } else {
   ENTRY = ['./app.jsx', 'webpack-hot-middleware/client'];
 }
-const CONTEXT_PATH = path.join(__dirname, '..', 'src', 'client');
+const CONTEXT_PATH = path.join(__dirname, 'client');
 const OUTPUT_PATH = path.join(__dirname, 'public');
 const OUTPUT_FILENAME = 'bundle.js';
 const ESLINT_CONFIG_PATH = path.join(__dirname, '..', '.eslintrc');
