@@ -10,6 +10,8 @@ import Billboard from '../components/billboard';
 import Header from '../components/header';
 
 function AppContainer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="page-container">
       <div className="content-spacer">
@@ -30,7 +32,7 @@ function AppContainer() {
         </Billboard>
       </div>
       <Footer>
-        <FooterItem>&copy; 2016 St&uuml;dable</FooterItem>
+        <FooterItem>&copy; {currentYear} St&uuml;dable</FooterItem>
         <FooterItem>
           Made with <i className="fa fa-magic" /> by St&uuml;dable.
         </FooterItem>
