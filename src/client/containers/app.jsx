@@ -14,23 +14,21 @@ function AppContainer() {
 
   return (
     <div className="page-container">
-      <div className="content-spacer">
-        <Header>
-          <LogoContainer>
-            <LogoImage />
-            <LogoText />
-          </LogoContainer>
-          <Nav disabled>
-            <NavItem label="About" />
-            <NavItem label="Portfolio" />
-            <NavItem label="Contact" />
-            <NavItem label="Blog" />
-          </Nav>
-        </Header>
-        <Billboard>
-          WE&rsquo;RE BUILDING THINGS!
-        </Billboard>
-      </div>
+      <Header>
+        <LogoContainer>
+          <LogoImage />
+          <LogoText />
+        </LogoContainer>
+        <Nav disabled>
+          <NavItem label="About" />
+          <NavItem label="Portfolio" />
+          <NavItem label="Contact" />
+          <NavItem label="Blog" />
+        </Nav>
+      </Header>
+      <Billboard>
+        WE&rsquo;RE BUILDING THINGS!
+      </Billboard>
       <Footer>
         <FooterItem>&copy; {currentYear} St&uuml;dable</FooterItem>
         <FooterItem>

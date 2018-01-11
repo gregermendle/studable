@@ -3,7 +3,9 @@ import React from 'react';
 function Billboard({ children }) {
   return (
     <div className="billboard">
-      {children}
+      <div className="billboard-inner">
+        {children}
+      </div>
     </div>
   );
 }
