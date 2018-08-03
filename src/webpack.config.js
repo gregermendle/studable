@@ -6,9 +6,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 let ENTRY;
 
 if (isProduction) {
-  ENTRY = ['./app.jsx'];
+  ENTRY = ['./App.jsx'];
 } else {
-  ENTRY = ['./app.jsx', 'webpack-hot-middleware/client'];
+  ENTRY = ['./App.jsx', 'webpack-hot-middleware/client'];
 }
 const CONTEXT_PATH = path.join(__dirname, '..', 'src', 'client');
 const OUTPUT_PATH = path.join(__dirname, 'public');

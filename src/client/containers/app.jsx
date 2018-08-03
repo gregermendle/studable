@@ -3,11 +3,11 @@ import React from 'react';
 /*
   Components
 */
-import { LogoContainer, LogoImage, LogoText } from '../components/logo';
-import { Nav, NavItem } from '../components/nav';
-import { Footer, FooterItem } from '../components/footer';
-import Billboard from '../components/billboard';
-import Header from '../components/header';
+import { LogoContainer, LogoImage, LogoText } from '../components/Logo';
+import { Nav, NavItem } from '../components/Nav';
+import { Footer, FooterItem } from '../components/Footer';
+import Billboard from '../components/Billboard';
+import Header from '../components/Header';
 
 function AppContainer() {
   const currentYear = new Date().getFullYear();
@@ -23,7 +23,6 @@ function AppContainer() {
           <NavItem label="About" />
           <NavItem label="Portfolio" />
           <NavItem label="Contact" />
-          <NavItem label="Blog" />
         </Nav>
       </Header>
       <Billboard>

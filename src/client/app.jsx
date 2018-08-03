@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 import 'font-awesome/less/font-awesome.less';
-import App from './containers/app';
+import App from './containers/App';
 import './styles/styles.less';
 
 /*
