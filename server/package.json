@@ -1,0 +1,29 @@
+{
+  "name": "studable-server",
+  "version": "1.0.0",
+  "description": "Studable website server.",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregermendle/studable.git"
+  },
+  "keywords": [
+    "studable",
+    "server"
+  ],
+  "author": "Gregory Jordan",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "typescript": "^3.5.1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "studable-client",
+  "version": "1.0.0",
+  "description": "Studable design and development website.",
+  "main": "App.tsx",
+  "scripts": {
+    "dev": "NODE_ENV=development parcel index.html -p 3000",
+    "build": "rm -rf dist && NODE_ENV=production parcel build ./src/index.html --out-dir ./dist",
+    "format": "prettier --write src/**/*.js src/**/*.ts src/**/*.tsx src/**/*.jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregermendle/studable.git"
+  },
+  "author": "Gregory Jordan",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/gregermendle/studable/issues"
+  },
+  "homepage": "https://www.studable.com",
+  "devDependencies": {
+    "@types/node": "^12.0.5",
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router": "^5.0.1",
+    "@types/react-router-dom": "^4.3.3",
+    "less": "^2.7.1",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.1",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1"
+  }
+}

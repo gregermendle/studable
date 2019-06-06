@@ -1,15 +1,16 @@
-import React from 'react';
+import * as React from 'react';
 
-/*
-  Components
-*/
-import { LogoContainer, LogoImage, LogoText } from '../components/Logo';
-import { Nav, NavItem } from '../components/Nav';
-import { Footer, FooterItem } from '../components/Footer';
+import LogoText from '../components/LogoText';
+import LogoContainer from '../components/LogoContainer';
+import LogoImage from '../components/LogoImage';
+import Nav from '../components/Nav';
+import NavItem from '../components/NavItem';
+import Footer from '../components/Footer';
+import FooterItem from '../components/FooterItem';
 import Billboard from '../components/Billboard';
 import Header from '../components/Header';
 
-function AppContainer() {
+const AppContainer: React.SFC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -25,9 +26,7 @@ function AppContainer() {
           <NavItem label="Contact" />
         </Nav>
       </Header>
-      <Billboard>
-        WE&rsquo;RE BUILDING THINGS!
-      </Billboard>
+      <Billboard>WE&rsquo;RE BUILDING THINGS!</Billboard>
       <Footer>
         <FooterItem>&copy; {currentYear} St&uuml;dable</FooterItem>
         <FooterItem>
@@ -36,6 +35,6 @@ function AppContainer() {
       </Footer>
     </div>
   );
-}
+};
 
 export default AppContainer;
